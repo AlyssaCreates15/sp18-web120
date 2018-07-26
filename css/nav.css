@@ -1,0 +1,68 @@
+/* CSS Document */
+
+
+ul.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    font-family: arial, san-serif;
+    height: 50px;
+}
+
+
+ul.topnav li {
+     float: left;
+     list-style-type: none;
+     width: 16.66%;
+     text-align:center;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+ul.topnav li a:hover {
+    background-color: blue;
+     }
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+   }
+}
+
+
+
+@media screen and (max-width:680px) {
+ 
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+}
