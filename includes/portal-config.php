@@ -11,9 +11,9 @@ Used to store all of our WEB120 configuration information
 
 define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
-echo THIS_PAGE;
+//echo THIS_PAGE;
 
-die;
+//die;
 
 switch(THIS_PAGE){
 
@@ -34,12 +34,15 @@ switch(THIS_PAGE){
 }
 
 $nav1['index.php'] = "Welcome";
-$nav1['big/index.php'] = "Big";
+$nav1['big/index.php'] = "BIG";
 $nav1['aia.php'] = "AIA";
 $nav1['flowchart.php'] = "Flowchart";
 $nav1['fp/index.php'] = "Final Project";
 $nav1['contact.php'] = "Contact Alyssa";
-
+/*echo '<pre>';
+var_dump($nav1);
+echo '</pre>';
+die; */
 /* 
 here we're creating a function to generate
 links and keep the highlight on the current page
