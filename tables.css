@@ -1,0 +1,26 @@
+/*Styles for my tables*/
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top:2em;
+}
+
+table.client th {
+    width: 25%;
+    font-weight:normal;
+    font-variant: small-caps;
+    background-color: grey;
+}
+
+table.audience th {
+    background-color:grey;
+    color:black;
+    width:33%;
+}
+
+td, th {
+    border:1px solid teal;
+    padding: 0.5em;
+}

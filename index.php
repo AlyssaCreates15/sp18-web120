@@ -1,31 +1,32 @@
-<?php include 'header.php'?>
-      
+<?php include 'includes/header.php'?>
+<?php include 'portal-config.php'?>
+
         
-        <div class="container">
-          <img src="images/jung.jpg" alt="jung" class="jung">
-         
-        </div>
-        
-            <h2>"Alyssa has an eye for design, a passion to create, and the gumption to persist!" -Client</h2>  
-        
+<!-- START LEFT COL -->
+<section>
+ <h2 class="pageID">Do you ever wish you could have the antique charm without the antiquity issues?</h2>
+
+<!-- MAKE SURE YOU GET YOUR (3) IMAGES SAVED INTO YOUR IMAGES FOLDER -->
     
-        
-    <div class="container">
-        <ul>
-        <li>
-            <h3><a href="about.html">ABOUT</a></h3>
-            <p>To learn more about this Artist!</p>
-        </li>
-        
-        <li>
-            <h3><a href="projects.html">PROJECTS</a></h3>
-            <p>See Projects here!</p>
-        </li>
-        
-        <li>
-            <h3><a href="connect.html">CONNECT</a></h3>
-            <p>Say Hi!</p>
-        </li>
-        </ul>
-        </div>
-<?php include 'footer.php'?>
+ <p></p>
+<p>  
+</p>      
+
+ 
+</section>
+<!-- END LEFT COL -->
+
+<!-- START RIGHT COL -->
+<aside>
+
+ 
+<img src="images/index.jpg" class="index" alt="index" />
+ 
+   
+</aside>
+<!-- END RIGHT COL -->
+ 
+<?php include "includes/footer.php"?>
+
+
+

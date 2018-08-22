@@ -1,0 +1,150 @@
+/* My WEB120 Portal Website Styles */
+
+html {
+    background-color:#ccc;
+    font-family:arial, sans-serif;
+}
+
+body {
+       background-image:url(../images/wall.jpg);
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size:100%; 
+    }
+
+
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+    
+}
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+}
+
+.logo {
+    color:red;
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    height:50px;
+	clear:both;
+}
+
+footer li {
+        float:left;
+        width: 25%;
+        list-style-type: none;
+        text-align:center;
+        margin-top: 10px;
+    } 
+
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   div.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+        padding-left: 10px;
+		width:60%;
+		float:left;
+	}
+	
+     aside {	
+		width:35%;
+		float:right;
+	}
+			
+	
+    img.desktop {
+      		 float:left;
+       		width:50%;
+            padding-left:10px;
+            padding-right:10px;
+   	 }
+    
+    img.tablet, img.phone {
+       		 display:none;
+             width:30%;
+             height:30%;
+    	}  
+   
+    ul.topnav li a.selected {
+        		background-color: #999;
+        		color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+	section {
+		width:60%;
+		float:left;
+	}
+	
+	aside {	
+		width:39%;
+		float:right;
+	}
+	
+            img.tablet {
+       		width:50%;
+           }
+    
+           img.phone, img.desktop {
+        		display:none;
+           } 
+    
+    
+           ul.topnav li a.selected {
+        		background-color: #999;
+        		color:#000;
+          }
+  }
+
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    img.phone {
+       		width:100%;
+    }
+    
+    img.tablet, img.desktop {
+        		display:none;
+    }  
+
+}
+
+
